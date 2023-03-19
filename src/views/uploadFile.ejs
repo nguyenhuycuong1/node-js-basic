@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS Basic</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="topnav">
+        <a  href="/">Home</a>
+        <a class="active" href="/upload">Upload File</a>
+    </div>
+    <h2>Upload single</h2>
+    <form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+        <label for="">Avatar: </label>
+        <input type="file" name="profile_pic">
+        <button type="submit">Save file</button>
+    </form>
+
+    <h2>Upload multiple</h2>
+    <!-- <form method="POST" action="/upload-profile-pic" enctype="multipart/form-data">
+        <label for="">Avatar: </label>
+        <input type="file" name="multiple_images" multiple>
+        <button type="submit">Save file</button>
+    </form> -->
+    
+</body>
+</html>
