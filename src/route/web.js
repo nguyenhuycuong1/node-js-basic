@@ -46,7 +46,9 @@ const initWebRoute = (app) => {
     router.post('/update-user', homeController.updateUser)
 
     router.get('/upload', homeController.getUploadFilePage);
-    router.post('/upload-profile-pic', upload.single('profile_pic'), homeController.handleUploadFile)
+    router.post('/upload-profile-pic', upload.single('profile_pic'), homeController.handleUploadFile);
+    router.post('/upload-multiple-images', upload.array('multiple_images', 10), homeController.handleUploadMultipleFile);
+
     return app.use('/', router);
 }
 
